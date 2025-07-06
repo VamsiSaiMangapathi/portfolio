@@ -14,14 +14,11 @@ const Hero = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      {/* Animated particles background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse top-10 left-10"></div>
         <div className="absolute w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse bottom-10 right-10 animation-delay-2000"></div>
         <div className="absolute w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-pulse top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animation-delay-4000"></div>
       </div>
-
-      {/* Floating geometric shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-20 w-4 h-4 bg-blue-400/30 rotate-45 animate-float"></div>
         <div className="absolute top-40 right-32 w-6 h-6 bg-purple-400/30 rounded-full animate-float-delayed"></div>
@@ -29,7 +26,6 @@ const Hero = () => {
         <div className="absolute top-60 left-1/3 w-3 h-3 bg-indigo-400/30 animate-float"></div>
         <div className="absolute bottom-40 right-20 w-4 h-4 bg-pink-400/30 rounded-full animate-float-delayed"></div>
       </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
         <div className="text-center">
           <div className="animate-fade-in-up">
@@ -41,9 +37,6 @@ const Hero = () => {
             <h2 className="text-2xl md:text-3xl text-blue-200 mb-4 font-medium animate-slide-in-left">
               Frontend Developer | React & Next.js
             </h2>
-            {/* <h3 className="text-lg md:text-xl text-green-300 mb-8 font-medium animate-slide-in-right">
-              Currently Learning Node.js & Backend Development
-            </h3> */}
             <p className="text-lg text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed animate-slide-in-right">
               I craft modern, responsive web applications using React.js,
               Next.js, and the latest technologies. With 3+ years of experience,
@@ -67,8 +60,6 @@ const Hero = () => {
                 Download Resume
               </a>
             </div>
-
-            {/* Social Links */}
             <div className="flex justify-center space-x-8 mb-16 animate-fade-in-up animation-delay-1500">
               <a
                 href="https://github.com/VamsiSaiMangapathi"
