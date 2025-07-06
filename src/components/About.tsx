@@ -40,7 +40,6 @@ const About = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-72 h-72 bg-blue-500/5 rounded-full blur-3xl animate-pulse top-20 right-20"></div>
         <div className="absolute w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse bottom-20 left-20"></div>

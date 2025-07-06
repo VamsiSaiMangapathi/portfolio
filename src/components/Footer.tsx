@@ -12,7 +12,6 @@ const Footer = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-64 h-64 bg-blue-500/5 rounded-full blur-3xl animate-pulse top-10 left-10"></div>
         <div className="absolute w-48 h-48 bg-purple-500/5 rounded-full blur-3xl animate-pulse bottom-10 right-10"></div>
