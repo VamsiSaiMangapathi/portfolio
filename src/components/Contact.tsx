@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react";
 import { FiGithub } from "react-icons/fi";
-
+import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -21,8 +23,34 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", message: "" });
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_vbj6ysq",
+        "template_4ejroao",
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "n-J5sm_0TDZdLLxDy"
+      )
+      .then(
+        () => {
+          // toast.success("Message sent successfully!");
+          toast.success("Message sent successfully!", {
+            theme: "dark",
+          });
+          setFormData({ name: "", email: "", message: "" });
+          setLoading(false);
+        },
+        (error) => {
+          console.error("Error:", error.text);
+          toast.error("Something went wrong. Please try again.");
+          setLoading(false);
+        }
+      );
   };
 
   const contactInfo = [
@@ -227,10 +255,16 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center px-6 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 transform hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/25 animate-fade-in-up animation-delay-600"
+                disabled={loading}
+                className="w-full flex items-center justify-center px-6 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 transform hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/25 animate-fade-in-up animation-delay-600 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <Send className="w-5 h-5 mr-2" />
-                Send Message
+                {loading ? (
+                  "Sending..."
+                ) : (
+                  <>
+                    <Send className="w-5 h-5 mr-2" /> Send Message
+                  </>
+                )}
               </button>
             </form>
           </div>
