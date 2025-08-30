@@ -53,7 +53,8 @@ const Hero = () => {
                 <ArrowDown className="w-5 h-5 animate-bounce" />
               </a>
               <a
-                href="#"
+                href="/VamsiResume.pdf"
+                download="VamsiSaiMangapathi_FrontendDeveloper_Resume"
                 className="group inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 shadow-lg hover:shadow-2xl border border-white/20 hover:border-white/30 transform hover:scale-105 hover:-translate-y-1"
               >
                 <Download className="mr-2 w-5 h-5 group-hover:animate-pulse" />
