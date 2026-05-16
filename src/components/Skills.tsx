@@ -29,13 +29,23 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: "Frontend Frameworks",
+      title: "Languages",
       icon: <Code className="w-6 h-6" />,
       skills: [
-        { name: "React.js", color: "from-blue-500 to-cyan-500" },
-        { name: "Next.js", color: "from-gray-200 to-blue-600" },
-        { name: "TypeScript", color: "from-blue-600 to-blue-800" },
+        { name: "HTML5", color: "from-orange-500 to-red-500" },
+        { name: "CSS3", color: "from-blue-500 to-cyan-500" },
         { name: "JavaScript ES6+", color: "from-yellow-500 to-orange-500" },
+        { name: "TypeScript", color: "from-blue-600 to-blue-800" },
+      ],
+    },
+    {
+      title: "Frameworks & Libraries",
+      icon: <Layers className="w-6 h-6" />,
+      skills: [
+        { name: "React.js", color: "from-blue-500 to-cyan-500" },
+        { name: "Next.js", color: "from-gray-600 to-gray-800" },
+        { name: "Vite.js", color: "from-purple-600 to-blue-600" },
+        { name: "Node.js", color: "from-green-600 to-green-800" },
       ],
     },
     {
@@ -43,43 +53,28 @@ const Skills = () => {
       icon: <Layers className="w-6 h-6" />,
       skills: [
         { name: "Redux", color: "from-purple-500 to-purple-700" },
-        { name: "RTK Query", color: "from-indigo-500 to-purple-600" },
-        { name: "Context API", color: "from-green-500 to-teal-500" },
+        { name: "Redux Toolkit (RTK)", color: "from-indigo-500 to-purple-600" },
+        { name: "RTK Query", color: "from-blue-600 to-indigo-600" },
+        { name: "Zustand", color: "from-amber-600 to-orange-600" },
       ],
     },
     {
-      title: "Backend & Learning",
-      icon: <Database className="w-6 h-6" />,
-      skills: [
-        {
-          name: "Node.js",
-          color: "from-green-600 to-green-800",
-          isLearning: true,
-        },
-        {
-          name: "Express.js",
-          color: "from-gray-600 to-purple-800",
-          isLearning: true,
-        },
-        {
-          name: "MongoDB",
-          color: "from-green-500 to-green-700",
-          isLearning: true,
-        },
-        { name: "REST APIs", color: "from-blue-600 to-indigo-600" },
-      ],
-    },
-    {
-      title: "Styling & UI",
+      title: "UI & Design",
       icon: <Palette className="w-6 h-6" />,
       skills: [
         { name: "Tailwind CSS", color: "from-cyan-500 to-blue-500" },
-        { name: "CSS3", color: "from-pink-500 to-rose-500" },
-        { name: "SCSS", color: "from-pink-600 to-purple-600" },
-        { name: "Styled Components", color: "from-yellow-600 to-red-500" },
-        { name: "Material-UI", color: "from-blue-600 to-indigo-600" },
         { name: "Ant Design", color: "from-red-500 to-pink-500" },
+        { name: "Shadcn/UI", color: "from-slate-600 to-slate-800" },
         { name: "Storybook", color: "from-indigo-500 to-purple-600" },
+        { name: "Figma", color: "from-pink-500 to-purple-500" },
+      ],
+    },
+    {
+      title: "Testing",
+      icon: <CheckCircle className="w-6 h-6" />,
+      skills: [
+        { name: "Jest", color: "from-red-600 to-red-800" },
+        { name: "React Testing Library", color: "from-blue-600 to-cyan-600" },
       ],
     },
     {
@@ -87,12 +82,31 @@ const Skills = () => {
       icon: <Settings className="w-6 h-6" />,
       skills: [
         { name: "Git", color: "from-orange-500 to-red-500" },
-        { name: "Vite", color: "from-purple-600 to-blue-600" },
-        { name: "Responsive Design", color: "from-teal-500 to-cyan-500" },
-        {
-          name: "Cross-browser Compatibility",
-          color: "from-indigo-500 to-purple-500",
-        },
+        { name: "GitHub", color: "from-gray-700 to-gray-900" },
+        { name: "GitLab", color: "from-orange-600 to-red-700" },
+        { name: "Postman", color: "from-orange-500 to-yellow-500" },
+        { name: "Swagger", color: "from-green-600 to-teal-600" },
+      ],
+    },
+    {
+      title: "Backend Basics",
+      icon: <Database className="w-6 h-6" />,
+      skills: [
+        { name: "Express.js", color: "from-gray-600 to-purple-800" },
+        { name: "MongoDB", color: "from-green-500 to-green-700" },
+        { name: "REST APIs", color: "from-blue-600 to-indigo-600" },
+        { name: "MVC", color: "from-indigo-600 to-purple-600" },
+      ],
+    },
+    {
+      title: "Performance & Web Vitals",
+      icon: <BookOpen className="w-6 h-6" />,
+      skills: [
+        { name: "Web Vitals", color: "from-green-600 to-teal-600" },
+        { name: "Lighthouse", color: "from-red-600 to-orange-600" },
+        { name: "SSR", color: "from-blue-600 to-cyan-600" },
+        { name: "Lazy Loading", color: "from-purple-600 to-pink-600" },
+        { name: "Image Optimization", color: "from-yellow-600 to-orange-600" },
       ],
     },
   ];
@@ -110,17 +124,17 @@ const Skills = () => {
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse top-10 left-10"></div>
-        <div className="absolute w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse bottom-10 right-10"></div>
-        <div className="absolute w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-pulse top-1/2 left-1/4"></div>
+        <div className="absolute w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse bottom-10 right-10"></div>
+        <div className="absolute w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse top-1/2 left-1/4"></div>
       </div>
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-20 text-blue-400/20 text-6xl font-mono animate-float">
           {"</>"}
         </div>
-        <div className="absolute top-40 right-32 text-purple-400/20 text-4xl font-mono animate-float-delayed">
+        <div className="absolute top-40 right-32 text-cyan-400/20 text-4xl font-mono animate-float-delayed">
           {"{}"}
         </div>
-        <div className="absolute bottom-32 left-40 text-cyan-400/20 text-5xl font-mono animate-float-slow">
+        <div className="absolute bottom-32 left-40 text-purple-400/20 text-5xl font-mono animate-float-slow">
           {"[]"}
         </div>
         <div className="absolute top-60 right-20 text-green-400/20 text-3xl font-mono animate-float">
@@ -130,13 +144,12 @@ const Skills = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
             Technical Skills
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Here are the technologies and tools I work with to build amazing web
-            applications, including my current learning journey into backend
-            development.
+            applications and maintain high-quality code standards.
           </p>
         </div>
 
@@ -147,18 +160,15 @@ const Skills = () => {
               className={`group bg-white/5 backdrop-blur-sm rounded-2xl shadow-2xl p-8 hover:bg-white/10 transition-all duration-500 border border-white/10 hover:border-white/20 transform hover:scale-105 hover:-translate-y-2 ${
                 isVisible ? "animate-fade-in-up" : "opacity-0"
               }`}
-              style={{ animationDelay: `${categoryIndex * 200}ms` }}
+              style={{ animationDelay: `${categoryIndex * 150}ms` }}
             >
               <div className="flex items-center mb-6 pb-4 border-b border-gray-600/30">
-                <div className="p-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg mr-3 group-hover:from-blue-500/30 group-hover:to-purple-500/30 transition-all duration-300">
+                <div className="p-2 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-lg mr-3 group-hover:from-blue-500/30 group-hover:to-cyan-500/30 transition-all duration-300">
                   {category.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-white group-hover:text-blue-300 transition-colors duration-300">
                   {category.title}
                 </h3>
-                {category.title === "Backend & Learning" && (
-                  <BookOpen className="w-4 h-4 ml-2 text-green-400 animate-pulse" />
-                )}
               </div>
               <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill, skillIndex) => (
@@ -167,16 +177,11 @@ const Skills = () => {
                     className={`group/skill relative px-4 py-2 bg-gradient-to-r ${skill.color} rounded-full text-white text-sm font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-fade-in-up`}
                     style={{
                       animationDelay: `${
-                        categoryIndex * 200 + skillIndex * 100
+                        categoryIndex * 150 + skillIndex * 75
                       }ms`,
                     }}
                   >
-                    <span className="relative z-10 flex items-center">
-                      {skill.name}
-                      {skill.isLearning && (
-                        <span className="ml-2 w-2 h-2 bg-green-300 rounded-full animate-pulse"></span>
-                      )}
-                    </span>
+                    <span className="relative z-10">{skill.name}</span>
                     <div className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 ))}
@@ -188,5 +193,8 @@ const Skills = () => {
     </section>
   );
 };
+
+// Add missing import for CheckCircle
+import { CheckCircle } from "lucide-react";
 
 export default Skills;
