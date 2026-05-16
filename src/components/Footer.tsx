@@ -1,6 +1,6 @@
 import React from "react";
 import { Heart, Linkedin, Mail } from "lucide-react";
-import { FiGithub } from "react-icons/fi";
+
 const Footer = () => {
   return (
     <footer
@@ -36,14 +36,6 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center space-x-4 animate-fade-in-up animation-delay-600">
-            <a
-              href="https://github.com/VamsiSaiMangapathi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
-            >
-              <FiGithub className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
-            </a>
             <a
               href="https://linkedin.com/in/vamsi-sai-mangapathi"
               target="_blank"

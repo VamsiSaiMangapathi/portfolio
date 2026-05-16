@@ -4,55 +4,62 @@ import {
   Calendar,
   CheckCircle,
   Users,
-  DollarSign,
   Target,
-  FolderOpen,
-  Calculator,
+  LogOut,
+  Briefcase,
+  Ticket,
 } from "lucide-react";
 
 const Experience = () => {
   const projectModules = [
     {
-      name: "Asset Management",
+      name: "Onboarding & Offboarding",
       description:
-        "Developed comprehensive asset tracking and management system with real-time updates and reporting capabilities.",
-      icon: <Calculator className="w-6 h-6" />,
+        "Built screens for document collection, task checklists, welcome kit tracking, clearance workflows, asset return tracking, exit interview forms, and multi-step approval chains.",
+      icon: <LogOut className="w-6 h-6" />,
       color: "from-blue-500 to-cyan-500",
     },
     {
-      name: "Payroll System",
+      name: "Asset Management",
       description:
-        "Built automated payroll processing system with salary calculations, tax deductions, and payment scheduling.",
-      icon: <DollarSign className="w-6 h-6" />,
+        "Created screens for tracking asset assignments, handling return requests, and displaying asset movement history across the organization.",
+      icon: <Briefcase className="w-6 h-6" />,
       color: "from-green-500 to-teal-500",
     },
     {
-      name: "EPAS (Employee Performance Appraisal System)",
+      name: "Performance Appraisal (EPAS)",
       description:
-        "Created performance evaluation platform with goal setting, progress tracking, and automated review cycles.",
+        "Developed goal-setting and review cycle screens enabling employees to set goals, conduct self-reviews, and managers to evaluate them through structured flows.",
       icon: <Target className="w-6 h-6" />,
       color: "from-purple-500 to-pink-500",
     },
     {
-      name: "Task Management",
+      name: "Task & Project Management",
       description:
-        "Implemented task assignment, tracking, and collaboration features with real-time notifications.",
+        "Implemented Kanban-style task board with filters, priority flags, and due date alerts. Built project-level views for billing rates, resource allocation, and progress tracking.",
       icon: <CheckCircle className="w-6 h-6" />,
       color: "from-orange-500 to-red-500",
     },
     {
       name: "Customer Management",
       description:
-        "Developed CRM module for customer data management, communication tracking, and relationship building.",
+        "Developed profile pages and management screens for customers, including agreements, site locations, and key contact information.",
       icon: <Users className="w-6 h-6" />,
       color: "from-indigo-500 to-purple-500",
     },
     {
-      name: "Project Management",
+      name: "Ticket Management",
       description:
-        "Built project planning and execution tools with timeline tracking, resource allocation, and progress monitoring.",
-      icon: <FolderOpen className="w-6 h-6" />,
+        "Built a support ticket system for employees to raise issues and track status. Included views for team leads to triage, assign, and close tickets.",
+      icon: <Ticket className="w-6 h-6" />,
       color: "from-cyan-500 to-blue-500",
+    },
+    {
+      name: "Employee Management",
+      description:
+        "Created screens for managing employee profiles, department assignments, reporting structures, and employment details with org hierarchy views.",
+      icon: <Users className="w-6 h-6" />,
+      color: "from-rose-500 to-pink-500",
     },
   ];
 
@@ -69,7 +76,7 @@ const Experience = () => {
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse top-20 left-20"></div>
-        <div className="absolute w-80 h-80 bg-purple-500/5 rounded-full blur-3xl animate-pulse bottom-20 right-20"></div>
+        <div className="absolute w-80 h-80 bg-cyan-500/5 rounded-full blur-3xl animate-pulse bottom-20 right-20"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -84,40 +91,47 @@ const Experience = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm rounded-2xl p-8 mb-12 shadow-2xl border border-white/10 hover:border-white/20 transition-all duration-500 animate-slide-in-up">
+          <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-sm rounded-2xl p-8 mb-12 shadow-2xl border border-white/10 hover:border-white/20 transition-all duration-500 animate-slide-in-up">
             <div className="flex items-start space-x-6">
-              <div className="flex-shrink-0 p-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl">
+              <div className="flex-shrink-0 p-4 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-2xl">
                 <Building className="w-8 h-8 text-white" />
               </div>
               <div className="flex-1">
-                <h3 className="text-3xl font-semibold text-white mb-3">
-                  Frontend Developer
+                <h3 className="text-3xl font-semibold text-white mb-2">
+                  Terralogic Software Solutions
                 </h3>
+                <p className="text-lg text-blue-300 font-medium mb-3">
+                  Software Engineer II (Frontend Developer)
+                </p>
                 <div className="flex items-center text-gray-300 mb-6">
                   <Calendar className="w-5 h-5 mr-3" />
                   <span className="text-lg">
-                    Current Position • 3+ Years Experience
+                    August 2022 – Present • 4 Years Experience
                   </span>
                 </div>
                 <p className="text-gray-300 mb-8 leading-relaxed text-lg">
-                  Working as a Frontend Developer with expertise in React.js,
-                  Next.js, Redux, and modern web technologies. Responsible for
-                  developing and maintaining complex web applications with focus
-                  on performance, user experience, and code quality.
+                  Working as a Frontend Developer II specializing in React.js,
+                  Next.js, and TypeScript. Core responsibilities include
+                  building and maintaining complex web applications with focus
+                  on performance, user experience, and code quality. Built and
+                  maintained a shared component library of 30+ components using
+                  Storybook, bringing overall page load performance up by around
+                  20% using Next.js features like SSR, lazy loading, and proper
+                  image handling.
                 </p>
 
                 <div className="border-t border-gray-600/50 pt-8">
                   <h4 className="text-2xl font-semibold text-white mb-6">
-                    HR-OS Project - Key Modules Developed
+                    Blazeup – HR Platform | Key Modules Developed
                   </h4>
                   <p className="text-gray-300 mb-8 text-lg leading-relaxed">
-                    Led the development of multiple critical modules in the
-                    HR-OS (Human Resource Operating System) project, a
-                    comprehensive enterprise solution for managing various HR
-                    and business operations.
+                    Led the development of multiple critical modules in Blazeup,
+                    a comprehensive multi-module HR platform that handles the
+                    full employee lifecycle — hiring, onboarding, performance
+                    reviews, asset tracking, task management, and offboarding.
                   </p>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {projectModules.map((module, index) => (
                       <div
                         key={index}
@@ -126,7 +140,7 @@ const Experience = () => {
                       >
                         <div className="flex items-start space-x-4">
                           <div
-                            className={`p-3 bg-gradient-to-r ${module.color} rounded-lg group-hover:scale-110 transition-transform duration-300`}
+                            className={`p-3 bg-gradient-to-r ${module.color} rounded-lg group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}
                           >
                             {module.icon}
                           </div>
@@ -146,14 +160,15 @@ const Experience = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/10 animate-slide-in-up animation-delay-500">
+
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/10 animate-slide-in-up">
             <h3 className="text-2xl font-semibold text-white mb-8 text-center">
               Key Achievements & Impact
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center p-6 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 group">
                 <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-3 group-hover:scale-110 transition-transform duration-300">
-                  6+
+                  7
                 </div>
                 <div className="text-gray-300 group-hover:text-white transition-colors duration-300">
                   Modules Developed
@@ -161,18 +176,18 @@ const Experience = () => {
               </div>
               <div className="text-center p-6 bg-gradient-to-r from-green-500/10 to-teal-500/10 rounded-xl border border-green-500/20 hover:border-green-400/40 transition-all duration-300 group">
                 <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400 mb-3 group-hover:scale-110 transition-transform duration-300">
-                  100%
+                  30+
                 </div>
                 <div className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                  On-Time Delivery
+                  Shared Components
                 </div>
               </div>
-              <div className="text-center p-6 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 group">
-                <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-3 group-hover:scale-110 transition-transform duration-300">
-                  3+
+              <div className="text-center p-6 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-300 group">
+                <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-3 group-hover:scale-110 transition-transform duration-300">
+                  20%
                 </div>
                 <div className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                  Years Experience
+                  Performance Improvement
                 </div>
               </div>
             </div>
