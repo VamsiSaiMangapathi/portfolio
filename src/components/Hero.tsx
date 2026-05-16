@@ -36,9 +36,10 @@ const Hero = () => {
               Frontend Developer | React & Next.js
             </h2>
             <p className="text-lg text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed animate-slide-in-right">
-              I craft modern, responsive web applications using React.js, Next.js, 
-              and TypeScript. With 3.6 years of experience, I help businesses bring 
-              their ideas to life with clean, high-performance solutions.
+              I craft modern, responsive web applications using React.js,
+              Next.js, and TypeScript. With 4 years of experience, I help
+              businesses bring their ideas to life with clean, high-performance
+              solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12 animate-fade-in-up animation-delay-1000">

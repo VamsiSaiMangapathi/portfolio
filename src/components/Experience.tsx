@@ -4,9 +4,7 @@ import {
   Calendar,
   CheckCircle,
   Users,
-  DollarSign,
   Target,
-  FolderOpen,
   LogOut,
   Briefcase,
   Ticket,
@@ -108,16 +106,17 @@ const Experience = () => {
                 <div className="flex items-center text-gray-300 mb-6">
                   <Calendar className="w-5 h-5 mr-3" />
                   <span className="text-lg">
-                    August 2022 – Present • 3.6 Years Experience
+                    August 2022 – Present • 4 Years Experience
                   </span>
                 </div>
                 <p className="text-gray-300 mb-8 leading-relaxed text-lg">
-                  Working as a Frontend Developer II specializing in React.js, Next.js, 
-                  and TypeScript. Core responsibilities include building and maintaining 
-                  complex web applications with focus on performance, user experience, and 
-                  code quality. Built and maintained a shared component library of 30+ 
-                  components using Storybook, bringing overall page load performance up by 
-                  around 20% using Next.js features like SSR, lazy loading, and proper 
+                  Working as a Frontend Developer II specializing in React.js,
+                  Next.js, and TypeScript. Core responsibilities include
+                  building and maintaining complex web applications with focus
+                  on performance, user experience, and code quality. Built and
+                  maintained a shared component library of 30+ components using
+                  Storybook, bringing overall page load performance up by around
+                  20% using Next.js features like SSR, lazy loading, and proper
                   image handling.
                 </p>
 
@@ -126,10 +125,10 @@ const Experience = () => {
                     Blazeup – HR Platform | Key Modules Developed
                   </h4>
                   <p className="text-gray-300 mb-8 text-lg leading-relaxed">
-                    Led the development of multiple critical modules in Blazeup, 
-                    a comprehensive multi-module HR platform that handles the full 
-                    employee lifecycle — hiring, onboarding, performance reviews, 
-                    asset tracking, task management, and offboarding.
+                    Led the development of multiple critical modules in Blazeup,
+                    a comprehensive multi-module HR platform that handles the
+                    full employee lifecycle — hiring, onboarding, performance
+                    reviews, asset tracking, task management, and offboarding.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
