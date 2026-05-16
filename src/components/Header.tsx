@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Linkedin, Mail } from "lucide-react";
-import { FiGithub } from "react-icons/fi";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -87,14 +86,6 @@ const Header = () => {
           </div>
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://github.com/VamsiSaiMangapathi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
-            >
-              <FiGithub className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors duration-300" />
-            </a>
-            <a
               href="https://linkedin.com/in/vamsi-sai-mangapathi"
               target="_blank"
               rel="noopener noreferrer"
@@ -137,14 +128,6 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex items-center space-x-4 px-3 py-2">
-                <a
-                  href="https://github.com/VamsiSaiMangapathi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-all duration-300"
-                >
-                  <FiGithub className="w-5 h-5 text-gray-300 hover:text-white transition-colors duration-300" />
-                </a>
                 <a
                   href="https://linkedin.com/in/vamsi-sai-mangapathi"
                   target="_blank"

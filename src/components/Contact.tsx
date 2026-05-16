@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react";
-import { FiGithub } from "react-icons/fi";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 const Contact = () => {
@@ -12,7 +11,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -34,7 +33,7 @@ const Contact = () => {
           email: formData.email,
           message: formData.message,
         },
-        "n-J5sm_0TDZdLLxDy"
+        "n-J5sm_0TDZdLLxDy",
       )
       .then(
         () => {
@@ -49,7 +48,7 @@ const Contact = () => {
           console.error("Error:", error.text);
           toast.error("Something went wrong. Please try again.");
           setLoading(false);
-        }
+        },
       );
   };
 
@@ -78,13 +77,6 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    {
-      icon: <FiGithub className="w-6 h-6" />,
-      name: "GitHub",
-      url: "https://github.com/VamsiSaiMangapathi",
-      color: "hover:text-gray-300",
-      bgColor: "from-gray-600 to-gray-800",
-    },
     {
       icon: <Linkedin className="w-6 h-6" />,
       name: "LinkedIn",

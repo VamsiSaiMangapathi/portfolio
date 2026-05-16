@@ -61,7 +61,7 @@ const About = () => {
           <div className="space-y-8 animate-slide-in-left">
             <div className="prose prose-lg text-gray-300 space-y-6">
               <p className="text-lg leading-relaxed">
-                With 3+ years of professional experience, I've developed complex
+                With 4 years of professional experience, I've developed complex
                 dashboards, single-page applications, and corporate tools that
                 prioritize high performance and pixel-perfect UIs. My passion
                 lies in solving challenging bugs, refactoring legacy code, and

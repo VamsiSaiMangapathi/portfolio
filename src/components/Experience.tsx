@@ -96,7 +96,7 @@ const Experience = () => {
                 <div className="flex items-center text-gray-300 mb-6">
                   <Calendar className="w-5 h-5 mr-3" />
                   <span className="text-lg">
-                    Current Position • 3+ Years Experience
+                    Current Position • 4 Years Experience
                   </span>
                 </div>
                 <p className="text-gray-300 mb-8 leading-relaxed text-lg">
@@ -169,7 +169,7 @@ const Experience = () => {
               </div>
               <div className="text-center p-6 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 group">
                 <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-3 group-hover:scale-110 transition-transform duration-300">
-                  3+
+                  4
                 </div>
                 <div className="text-gray-300 group-hover:text-white transition-colors duration-300">
                   Years Experience

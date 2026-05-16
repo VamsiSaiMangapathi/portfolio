@@ -1,6 +1,4 @@
-import React from "react";
 import { ArrowDown, Download, Linkedin, Mail } from "lucide-react";
-import { FiGithub } from "react-icons/fi";
 
 const Hero = () => {
   return (
@@ -39,7 +37,7 @@ const Hero = () => {
             </h2>
             <p className="text-lg text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed animate-slide-in-right">
               I craft modern, responsive web applications using React.js,
-              Next.js, and the latest technologies. With 3+ years of experience,
+              Next.js, and the latest technologies. With 4 years of experience,
               I help businesses bring their ideas to life with clean, impactful
               solutions.
             </p>
@@ -53,7 +51,7 @@ const Hero = () => {
                 <ArrowDown className="w-5 h-5 animate-bounce" />
               </a>
               <a
-                href="/VamsiResume.pdf"
+                href="/VamsiSaiMangapathi_FrontendDeveloper_Resume.pdf"
                 download="VamsiSaiMangapathi_FrontendDeveloper_Resume"
                 className="group inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 shadow-lg hover:shadow-2xl border border-white/20 hover:border-white/30 transform hover:scale-105 hover:-translate-y-1"
               >
@@ -62,14 +60,6 @@ const Hero = () => {
               </a>
             </div>
             <div className="flex justify-center space-x-8 mb-16 animate-fade-in-up animation-delay-1500">
-              <a
-                href="https://github.com/VamsiSaiMangapathi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-4 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 hover:shadow-lg hover:shadow-white/25"
-              >
-                <FiGithub className="w-6 h-6 text-white group-hover:text-blue-300 transition-colors duration-300" />
-              </a>
               <a
                 href="https://linkedin.com/in/vamsi-sai-mangapathi"
                 target="_blank"
